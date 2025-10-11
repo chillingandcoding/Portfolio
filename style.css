@@ -23,6 +23,7 @@ body {
 
 nav{
   display: flex;
+  clear: both;
   margin-bottom: 2em;
   padding: 0.5em;
 }
@@ -145,11 +146,16 @@ ul {
 } 
 
 .color-scheme {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
   font-family: inherit;
   font-size: 80%;
+}
+
+@media (min-width: 1080px) {
+  .color-scheme {
+    float: right;
+    margin-top: 0.5rem;
+    margin-right: -10em;
+  }
 }
 
 input, textarea, button, select {
