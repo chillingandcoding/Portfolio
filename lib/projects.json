@@ -2,21 +2,21 @@
   {
     "title": "A study on the Deceptions of Data Visualization",
     "year": "2025",
-    "image": "../images/Police Project.jpg",
+    "image": "https://chillingandcoding.github.io/Portfolio/images/Police%20Project.jpg",
     "url": "../projects/proj_ethical_design",
     "description": "A project on exploring how to design visualizations ethically - analyzing data from the New York Police Reports."
   },
   {
     "title": "Steam Recommender System - A Machine Learning Project",
     "year": "2025",
-    "image": "../images/Steam Project.jpg",
+    "image": "https://chillingandcoding.github.io/Portfolio/images/Steam%20Project.jpg",
     "url": "../projects/wip",
     "description": "A Recommendation Pipeline built using Logistic Regression and Random Forest Models."
   },
   {
     "title": "Income vs. Home Prices in San Francisco",
     "year": "2024",
-    "image": "../images/SF Home Project.jpg",
+    "image": "https://chillingandcoding.github.io/Portfolio/images/SF%20Home%20Project.jpg",
     "url": "../projects/wip",
     "description": "A project that explores if the ries of home prices in San Francisco is met with an equal rise in income over the past decade. It also explores the relationships of income vs home prices in specific zip codes."
   },
