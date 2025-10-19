@@ -2,67 +2,79 @@
   {
     "title": "A study on the Deceptions of Data Visualization",
     "year": "2025",
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "A project on exploring how to design visualizations ethically."
+    "image": "../images/Police Project.jpg",
+    "url": "../projects/proj_ethical_design",
+    "description": "A project on exploring how to design visualizations ethically - analyzing data from the New York Police Reports."
   },
   {
     "title": "Steam Recommender System - A Machine Learning Project",
     "year": "2025",
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "image": "../images/Steam Project.jpg",
+    "url": "../projects/wip",
     "description": "A Recommendation Pipeline built using Logistic Regression and Random Forest Models."
   },
   {
     "title": "Income vs. Home Prices in San Francisco",
     "year": "2024",
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "This project aims to explore if the ries of home prices in San Francisco is met with an equal rise in income over the past decade. It also explores the relationships of income vs home prices in specific zip codes."
+    "image": "../images/SF Home Project.jpg",
+    "url": "../projects/wip",
+    "description": "A project that explores if the ries of home prices in San Francisco is met with an equal rise in income over the past decade. It also explores the relationships of income vs home prices in specific zip codes."
   },
   {
     "title": "Unde alias quisquam quaerat!",
     "year": "2024",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "url": "../projects/wip",
     "description": "Voluptas in quaerat labore fuga dicta minima repellat laudantium qui! Laboriosam eius animi sequi, temporibus et minus vitae laborum laudantium eaque rem ratione ipsa, nesciunt voluptatibus inventore cumque repudiandae accusantium!"
   },
   {
     "title": "Ipsum sed reprehenderit deserunt?",
     "year": "2024",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "url": "../projects/wip",
     "description": "Id autem exercitationem nam veritatis quis soluta porro iure. Tempore non esse consequuntur praesentium dolores officia sequi odit, soluta doloribus ex unde, impedit ea provident est. Vero quisquam harum corporis."
   },
   {
     "title": "Enim minus aperiam molestias.",
     "year": "2024",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "url": "../projects/wip",
     "description": "Modi voluptates mollitia pariatur ea corrupti doloribus alias atque ex ab vitae minus reiciendis saepe sequi assumenda qui officiis sed voluptatum deserunt eos quas, rerum quo labore iste. Vero, ut."
   },
   {
     "title": "Distinctio cumque animi sint.",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "url": "../projects/wip",
     "description": "Ad similique iste adipisci deleniti rerum exercitationem quasi. Ratione sit itaque doloribus veritatis in possimus quia quos asperiores dolorum dolore, est sapiente necessitatibus minus quibusdam expedita, id perferendis esse omnis."
   },
   {
     "title": "Tempore eos saepe vitae!",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "url": "../projects/wip",
     "description": "Nisi in minus inventore animi error nostrum aperiam blanditiis sequi debitis. Nemo aut, deleniti aliquid magnam non voluptate beatae alias sequi ut quis. Ad soluta nihil, eligendi beatae non eum!"
   },
   {
     "title": "Consequuntur voluptates aperiam odit.",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "url": "../projects/wip",
     "description": "Nostrum voluptas velit perferendis atque tempore, iste ipsa minima! Aliquam pariatur facilis itaque, a nulla dolorem sunt quam, perferendis, necessitatibus velit nesciunt voluptate nobis quasi voluptatibus iusto molestiae quidem laudantium."
   },
   {
     "title": "Dicta amet quam distinctio.",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "url": "../projects/wip",
     "description": "Voluptas officiis nulla exercitationem minima, quisquam id nostrum cum soluta, repudiandae velit quam illo ducimus reprehenderit magni omnis in assumenda explicabo quis dolor aliquam enim suscipit libero. Beatae, facilis fugiat."
   },
   {
     "title": "Sint autem officiis dignissimos!",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "url": "../projects/wip",
     "description": "Deleniti laborum repudiandae obcaecati aut omnis aliquid deserunt voluptates adipisci. Ipsa laboriosam dolorem reprehenderit dolorum quisquam aliquam quas. Sapiente soluta at a veritatis et. Vitae enim laboriosam officiis corrupti sequi?"
   },
   {
     "title": "Consequatur alias sequi earum.",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "url": "../projects/wip",
     "description": "Fugiat similique saepe voluptatum sapiente totam, nam impedit ea nemo adipisci sed blanditiis dolor suscipit delectus maiores nulla, id possimus dicta magnam doloremque sunt quod nostrum! Fuga saepe quaerat necessitatibus."
   }
 ]

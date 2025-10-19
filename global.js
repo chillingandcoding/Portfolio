@@ -1,7 +1,7 @@
 const BASE_PATH =
   location.hostname === 'localhost' || location.hostname === '127.0.0.1'
-    ? '/' 
-    : '/Portfolio/'; 
+    ? '/'
+    : '/Portfolio/';
 
 let pages = [
   { url: '', title: 'Home' },
@@ -24,7 +24,9 @@ for (let p of pages) {
   nav.append(a);
   a.classList.toggle(
     'current',
-    a.host === location.host && a.pathname === location.pathname,
+    a.host === location.host && (
+      a.pathname === location.pathname || location.pathname.includes('/proj/')
+    )
   );
   if (a.host !== location.host) a.target = '_blank';
 }
@@ -47,7 +49,7 @@ const select = document.querySelector('.color-scheme select');
 if ('colorScheme' in localStorage) {
   const saved = localStorage.colorScheme;
   document.documentElement.style.setProperty('color-scheme', saved);
-  select.value = saved; 
+  select.value = saved;
 }
 
 select.addEventListener('input', function (event) {
@@ -62,9 +64,9 @@ export async function fetchJSON(url) {
     const response = await fetch(url);
     if (!response.ok) {
       throw new Error(`Failed to fetch projects: ${response.statusText}`);
-}
-  const data = await response.json();
-  return data;
+    }
+    const data = await response.json();
+    return data;
 
   } catch (error) {
     console.error('Error fetching or parsing JSON data:', error);
@@ -77,7 +79,9 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
     const article = document.createElement('article');
     article.innerHTML = `
       <${headingLevel}>${project.title}</${headingLevel}>
-      <img src="${project.image}" alt="${project.title}">
+      <a href="${project.url}">
+        <img src="${project.image}" alt="${project.title}">
+      </a>
       ${project.year ? `<p class="year">${project.year}</p>` : ''}
       <p>${project.description}</p>
     `;
