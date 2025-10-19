@@ -1,6 +1,6 @@
 import { fetchJSON, renderProjects, fetchGitHubData } from './global.js';
 
-fetchJSON('/lib/projects.json').then((projects) => {
+fetchJSON('./lib/projects.json').then((projects) => {
   const latestProjects = projects.slice(0, 3);
   const projectsContainer = document.querySelector('.projects');
   renderProjects(latestProjects, projectsContainer, 'h2');
