@@ -75,11 +75,17 @@ export async function fetchJSON(url) {
 
 export function renderProjects(projects, containerElement, headingLevel = 'h2') {
   containerElement.innerHTML = '';
+  
+  const homePage = window.location.pathname === '/Portfolio/' || 
+  window.location.pathname === '/Portfolio/index.html' || window.location.pathname === '/Portfolio'; 
   projects.forEach(project => {
+    const projectUrl = homePage 
+      ? `/Portfolio/projects/${project.url}` 
+      : `./${project.url}`;
     const article = document.createElement('article');
     article.innerHTML = `
       <${headingLevel}>${project.title}</${headingLevel}>
-      <a href="${project.url}">
+      <a href="${projectUrl}">
         <img src="${project.image}" alt="${project.title}">
       </a>
       ${project.year ? `<p class="year">${project.year}</p>` : ''}
