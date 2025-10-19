@@ -75,7 +75,6 @@ export async function fetchJSON(url) {
 
 export function renderProjects(projects, containerElement, headingLevel = 'h2') {
   containerElement.innerHTML = '';
-  
   projects.forEach(project => {
     const pathname = window.location.pathname;
     const inProjects = pathname.includes('/projects');
