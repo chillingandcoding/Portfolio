@@ -78,8 +78,8 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
   projects.forEach(project => {
     const pathname = window.location.pathname;
     const inProjects = pathname.includes('/projects');
-    const projectUrl = inProjects 
-      ? `../${project.url}`
+    const projectUrl = inProjects
+      ? `./${project.url}`  // Changed from ../ to ./
       : `/Portfolio/projects/${project.url}`;
     const article = document.createElement('article');
     article.innerHTML = `
