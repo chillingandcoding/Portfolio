@@ -74,7 +74,7 @@ function renderPieChart(projectsGiven) {
 renderPieChart(projects);
 
 let searchInput = document.querySelector('.searchBar');
-searchInput.addEventListener('change', (event) => {
+searchInput.addEventListener('input', (event) => {
     selectedIndex = -1;
     query = event.target.value;
     let filteredProjects = projects.filter((project) => {
