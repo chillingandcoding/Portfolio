@@ -56,8 +56,8 @@ function renderPieChart(projectsGiven) {
                 if (selectedIndex === -1) {
                     renderProjects(projects, projectsContainer, 'h2');
                 } else {
-                    const selectedYear = newData[selectedIndex].label;
-                    const filteredProjects = projects.filter(p => p.year === selectedYear);
+                    const currentYear = newData[selectedIndex].label;
+                    const filteredProjects = projects.filter(p => p.year === currentYear);
                     renderProjects(filteredProjects, projectsContainer, 'h2');
                 }
             });
