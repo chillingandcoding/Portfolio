@@ -292,3 +292,81 @@ dd {
 .wip {
   font-size: 42px;
 }
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+}
+
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(6em, auto));
+  gap: 2rem;
+  list-style: none;
+  margin: 1rem 0;
+  padding: 1rem;   
+  border: 1px solid gray;
+  flex: 1;
+}
+
+.legend .swatch {
+  display: flex;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--color);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+}
+
+.container {
+  display: flex;
+  gap: 3rem;           
+  align-items: center;
+}
+
+@media (max-width: 540px) {
+  #projects-pie-plot {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+.searchBar {
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+
+.searchBar {
+  font-size: 16px; 
+}
+
+&:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+
+path {
+  transition: 300ms;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
+}
+
+path {
+  cursor: pointer;
+}
