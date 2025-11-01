@@ -444,7 +444,6 @@ a {
 @keyframes marching-ants {
   to {
     stroke-dashoffset: -8;
-    /* 5 + 3 */
   }
 }
 
@@ -453,7 +452,7 @@ a {
   stroke: black;
   stroke-opacity: 0.7;
   stroke-dasharray: 5 3;
-  animation: marching-ants 2s linear infinite;
+  animation: marching-ants 1s linear infinite;
 }
 
 circle.selected {
@@ -463,15 +462,11 @@ circle.selected {
 .commit-stats {
   display: grid;
   grid-template-columns: auto 1fr;
-  /* dt column auto-sized, dd fills rest */
   column-gap: 12px;
-  /* space between columns */
   row-gap: 4px;
-  /* space between rows */
   font-size: 20px;
   text-align: left;
   align-items: baseline;
-  /* aligns dt and dd neatly on the same line */
 }
 
 .commit-stats dt {
@@ -494,4 +489,8 @@ circle.selected {
 .commit-stats dd {
   grid-row: 2;
   margin: 0;
+}
+
+.selection {
+  vector-effect: non-scaling-stroke;
 }
