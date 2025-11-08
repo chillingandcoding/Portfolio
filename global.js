@@ -76,21 +76,29 @@ export async function fetchJSON(url) {
 
 export function renderProjects(projects, containerElement, headingLevel = 'h2') {
   containerElement.innerHTML = '';
+
   projects.forEach(project => {
     const pathname = window.location.pathname;
     const inProjects = pathname.includes('/projects');
-    const projectUrl = inProjects
-      ? `./${project.url}`
-      : `/Portfolio/projects/${project.url}`;
+
+    let projectUrl = project.url?.trim() || '';
+
+    if (!projectUrl.startsWith('http') && !projectUrl.includes('github')) {
+      projectUrl = inProjects
+        ? `./${projectUrl}`
+        : `/Portfolio/projects/${projectUrl}`;
+    }
+
     const article = document.createElement('article');
     article.innerHTML = `
       <${headingLevel}>${project.title}</${headingLevel}>
-      <a href="${projectUrl}">
+      <a href="${projectUrl}" target="${projectUrl.startsWith('http') ? '_blank' : '_self'}">
         <img src="${project.image}" alt="${project.title}">
       </a>
       ${project.year ? `<p class="year">${project.year}</p>` : ''}
       <p>${project.description}</p>
     `;
+
     containerElement.appendChild(article);
   });
 }
